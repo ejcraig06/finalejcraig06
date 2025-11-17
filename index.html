@@ -1,86 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ethan's Sports Portfolio</title>
-    <link rel="stylesheet" href="STYLE.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sports Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
 </head>
+<body class="fade-in">
 
-<body>
-    <header>
-        <nav>
-            <h2 class="logo">Ethan's Sports Portfolio</h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#news">Sports News</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <h1 class="title">Sports Portfolio</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
 
-    <!-- HERO SECTION -->
-    <section id="home" class="hero fade-in">
-        <div class="overlay"></div>
-        <div class="hero-content slide-up">
-            <h1>Welcome to My Sports Portfolio</h1>
-            <p>Hi, I'm Ethan — passionate about sports and technology.</p>
-        </div>
-    </section>
+<section class="hero stadium-bg">
+    <h2>Welcome to My Sports-Themed Portfolio</h2>
+    <p>Experience interactive design and dynamic animations.</p>
+</section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="about fade-in">
-        <h2>About Me</h2>
-        <p>
-            I'm <strong>Ethan</strong>, a sports fan and developer excited about blending sports and modern technology.
-        </p>
+<section class="gallery-section">
+    <h2>Highlight Gallery</h2>
+    <div class="gallery">
+        <img src="https://i.imgur.com/4Z7FzvF.jpeg" alt="Basketball Dunk">
+        <img src="https://i.imgur.com/3V8jF8p.jpeg" alt="Basketball Dribble">
+        <img src="https://i.imgur.com/yO9MZ7K.jpeg" alt="Cheering Crowd">
+        <img src="https://i.imgur.com/6J7uP6H.jpeg" alt="Basketball Hoop">
+        <img src="https://i.imgur.com/0wLqH8N.jpeg" alt="Fast Break">
+    </div>
+</section>
 
-        <img class="small-img"
-             src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d"
-             alt="Sports Training Image">
-    </section>
+<section class="feature-section">
+    <h2>Live NBA Player Highlight</h2>
+    <p id="fact" class="animated-text">Loading NBA highlight...</p>
+</section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="projects fade-in">
-        <h2>My Projects</h2>
+<section class="buttons-section">
+    <a class="button bounce" href="projects.html">View Projects</a>
+    <a class="button bounce" href="about.html">Learn More</a>
+    <a class="button bounce" href="schedule.html">View Schedule</a>
+</section>
 
-        <div class="project-card slide-up">
-            <img class="small-img"
-                 src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7"
-                 alt="Football Image">
-            <h3>🏈 Sports Stats Dashboard</h3>
-            <p>A web app showing real-time sports statistics using an external API.</p>
-        </div>
+<footer>
+    <p>Sports Portfolio © 2025</p>
+</footer>
 
-        <div class="project-card slide-up">
-            <img class="small-img"
-                 src="https://images.unsplash.com/photo-1518972559570-7cc1309f3229"
-                 alt="Basketball Image">
-            <h3>🏀 Basketball Player Analyzer</h3>
-            <p>Interactive tool visualizing player strengths and weaknesses.</p>
-        </div>
-    </section>
-
-    <!-- SPORTS NEWS API SECTION -->
-    <section id="news" class="news fade-in">
-        <h2>Latest Sports Headlines</h2>
-        <p>(Loaded using a live Web API)</p>
-        <div id="news-container">Loading latest sports news...</div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="contact fade-in">
-        <h2>Contact Me</h2>
-        <p>Email: ethan@example.com</p>
-        <p>GitHub: <a href="https://github.com/yourusername">yourusername</a></p>
-    </section>
-
-    <footer>
-        <p>© 2025 Ethan — Sports Portfolio</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
