@@ -2,20 +2,35 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 
-    /* SPORTS BACKGROUND IMAGE */
-    background: url("https://i.ibb.co/QNr2tcn/sports-background.jpg") no-repeat center center fixed;
+    /* SPORTS STADIUM BACKGROUND */
+    background: 
+       linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+       url("https://i.ibb.co/B4cRJzD/stadium.jpg") no-repeat center center fixed;
     background-size: cover;
 
     color: white;
 }
 
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.3s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
 
 /* Header */
 header {
-    background: #0057d9;
+    background: #0057d9cc;
     padding: 20px;
     text-align: center;
-    color: white;
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: bold;
 }
 
 nav a {
@@ -41,7 +56,7 @@ nav a:hover {
 .hero-img {
     width: 260px;
     border-radius: 12px;
-    border: 4px solid #0057d9;
+    border: 4px solid #ff9900;
 }
 
 .hero-text {
@@ -50,51 +65,50 @@ nav a:hover {
 }
 
 .name {
-    color: #0057d9;
+    color: #ff9900;
     font-weight: bold;
 }
 
 /* Quote Box */
 .quote-box {
-    background: white;
+    background: rgba(255,255,255,0.1);
     margin: 40px auto;
     padding: 30px;
-    width: 70%;
+    width: 80%;
     max-width: 600px;
     text-align: center;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border: 2px solid #ff9900;
+    backdrop-filter: blur(6px);
 }
 
 #quote-btn {
-    padding: 10px 20px;
-    background: #ff9300;
+    padding: 12px 22px;
+    background: #ff9900;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    color: white;
+    color: black;
+    font-weight: bold;
     font-size: 1rem;
 }
 
 #quote-btn:hover {
-    background: #e57d00;
+    background: #ffb84d;
 }
 
 /* Footer */
 footer {
+    background: #0057d9cc;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-    background: #0057d9;
-    color: white;
 }
 
-/* Responsive */
+/* Mobile Responsive */
 @media (max-width: 768px) {
-    .hero {
-        text-align: center;
-    }
     .hero-img {
+        width: 80%;
         margin-bottom: 20px;
     }
 }
