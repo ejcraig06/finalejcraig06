@@ -1,9 +1,14 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #e8f3ff;
-    color: #1f2a44;
+
+    /* SPORTS BACKGROUND IMAGE */
+    background: url("https://i.ibb.co/QNr2tcn/sports-background.jpg") no-repeat center center fixed;
+    background-size: cover;
+
+    color: white;
 }
+
 
 /* Header */
 header {
