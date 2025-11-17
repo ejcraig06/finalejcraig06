@@ -1,24 +1,18 @@
-async function loadQuote() {
-    try {
-        const res = await fetch("https://api.quotable.io/random?tags=sports|inspirational");
-        const data = await res.json();
+// SPORTS NEWS API
+const newsContainer = document.getElementById("news-container");
 
-        const quoteBox = document.getElementById("quote");
-
-        // Fade-in effect for each new quote
-        quoteBox.style.opacity = 0;
-        setTimeout(() => {
-            quoteBox.textContent = `"${data.content}" — ${data.author}`;
-            quoteBox.style.transition = "opacity 1s";
-            quoteBox.style.opacity = 1;
-        }, 150);
-
-    } catch (error) {
-        document.getElementById("quote").textContent = "Error loading quote. Try again!";
-    }
-}
-
-document.getElementById("quote-btn").addEventListener("click", loadQuote);
-
-// Load first quote
-loadQuote();
+fetch("https://newsdata.io/api/1/news?apikey=pub_533658772d16dc923e6f98b19e82b5f5cfc41&category=sports")
+    .then(response => response.json())
+    .then(data => {
+        newsContainer.innerHTML = "";
+        
+        data.results.slice(0, 5).forEach(article => {
+            const div = document.createElement("div");
+            div.style.margin = "15px 0";
+            div.innerHTML = `<strong>${article.title}</strong><br>${article.description || ""}`;
+            newsContainer.appendChild(div);
+        });
+    })
+    .catch(err => {
+        newsContainer.innerHTML = "Sorry, cannot load sports news right now.";
+    });
