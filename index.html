@@ -3,45 +3,37 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ethan's Sports Portfolio</title>
-    <link rel="stylesheet" href="STYLE.css?v=3" />
-
+    <title>My Sports Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <header>
+        <nav>
+            <h2 class="logo">My Sports Portfolio</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#news">Sports News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1 class="title">🏀 Ethan's Sports Portfolio 🏆</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to My Sports Portfolio</h1>
+            <p>Showcasing my journey and passion through sports and technology.</p>
+        </div>
+    </section>
 
-<section class="hero">
-    <img 
-      src="https://upload.wikimedia.org/wikipedia/commons/2/24/LeBron_James_2022.jpg" 
-      alt="LeBron James"
-      class="hero-img fade-in"
-    >
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm <strong>Your Name</strong> — a sports fan and developer passionate about blending
 
-    <div class="hero-text fade-in">
-        <h2>Hi, I'm <span class="name">Ethan</span> 👋</h2>
-        <p>Welcome to my sports-themed portfolio! I'm passionate about technology, competition, and creating awesome interactive web projects.</p>
-    </div>
-</section>
-
-<section class="quote-box fade-in" id="quote-box">
-    <h3>🔥 Motivational Sports Quote</h3>
-    <p id="quote">Loading quote...</p>
-    <button id="quote-btn">New Quote</button>
-</section>
-
-<footer>
-    <p>© 2025 Ethan — Built with hustle, creativity, and code 💪</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
 </html>
