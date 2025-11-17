@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sports Portfolio - Ethan Craig</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
+</head>
+<body class="fade-in">
+
+<header>
+    <h1>Ethan Craig - Lincoln Baseball</h1>
+    <nav>
+        <a href="lilbro.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="https://lulions.com/" target="_blank">Schedule</a>
+        <a href="https://www.instagram.com/3than_42/" target="_blank">About</a>
+    </nav>
+</header>
+
+<section class="hero stadium-bg">
+    <h2>Welcome to My Sports-Themed Portfolio</h2>
+    <p>Interactive design meets sports highlights!</p>
+</section>
+
+<section class="about-section">
+    <h2>About Me</h2>
+    <ul>
+        <li>Baseball player at Lincoln High School</li>
+        <li>Sophomore Computer Science major</li>
+        <li>From New Jersey</li>
+        <li>Hobbies: Baseball, watching football and basketball, building Legos</li>
+    </ul>
+</section>
+
+<section class="gallery-section">
+    <h2>Highlight Gallery</h2>
+    <div class="gallery">
+       <img src="https://www.bing.com/th/id/OGC.8ef1bd2a88448948505fd121471ac920?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fmedia.giphy.com%2fmedia%2f10xt8Rqlk2Bxw4%2fgiphy.gif&ehk=dFXTQXPoRonkQoYT%2bTrn0Vj0MTSqvbKxj%2fUmGVyYw9U%3d" alt="Basketball Dunk">
+        <img src="https://www.bing.com/th/id/OGC.f0b3e26dd57970ac408df11f1643f92b?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fi.pinimg.com%2foriginals%2f74%2ffd%2f9f%2f74fd9f206ba0cb243d2a449da22da16a.gif&ehk=mzYObMW0%2bYlUwGgNx02nTBmOWI%2byBgox7kYGf9A6pqQ%3d" alt="Basketball Dribble">
+        <img src="https://www.bing.com/th/id/OGC.6b9e985975be9834901f61b3da4f4719?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fwww.icegif.com%2fwp-content%2fuploads%2f2023%2f11%2ficegif-979.gif&ehk=fbVD%2fS0VjmzNRc%2fbqvLI0ZODlzLOJjeidvzBTeZdaSA%3d" alt="Cheering Crowd">
+        <img src="https://www.bing.com/th/id/OGC.5573aacdd3a4ae79644fe4020dfa979c?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fmedia.tenor.com%2fEhx27_QtVZ8AAAAC%2fdexter-lawrence.gif&ehk=H6zNt85XYrmXsqDCfra0bs4JnnybWvYREp1A0nuMwYE%3d">
+        <img src="https://www.bing.com/th/id/OGC.866fe475fe5bbc2f3acd5a0b72b21a6f?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fgifdb.com%2fimages%2fhigh%2falley-oop-466-x-264-gif-3f9yqa4zju2gkouj.gif&ehk=9DozHa%2bSOF95O9bbdx6s%2byEc7kff1Anj0Dtu0fTr%2fXU%3d" alt="Fast Break">
+    </div>
+</section>
+
+<section class="feature-section">
+    <h2>Live NBA Player Highlight</h2>
+    <p id="fact" class="animated-text">Loading NBA highlight...</p>
+</section>
+
+<section class="buttons-section">
+    <a class="button bounce" href="projects.html">View Projects</a>
+    <a class="button bounce" href="https://www.instagram.com/3than_42/" target="_blank">Follow on Instagram</a>
+    <a class="button bounce" href="https://lulions.com/" target="_blank">View Schedule</a>
+</section>
+
+
+<section class="sports-fact-section">
+    <h2>Random Sports Fact</h2>
+    <button id="factBtn">Get a Random Fact</button>
+    <p id="factDisplay"></p>
+</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random World Record</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f0f0f0;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    #recordDisplay {
+      margin-top: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #2a2a72;
+    }
+  </style>
+</head>
+<body>
+  <h1>Random World Record Generator</h1>
+  <button id="recordBtn">Show a Random World Record</button>
+  <div id="recordDisplay"></div>
+
+  <script src="script.js"></script>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess The Athlete Game</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    #gameBox {
+      width: 350px;
+      margin: auto;
+      padding: 20px;
+      background: #222;
+      border-radius: 10px;
+      box-shadow: 0 0 10px white;
+    }
+
+    #athleteImg {
+      width: 300px;
+      height: 300px;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      background: orange;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    input {
+      padding: 10px;
+      width: 80%;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Guess The Athlete</h1>
+
+<div id="gameBox">
+    <img id="athleteImg" src="" alt="Athlete Image">
+
+    <input type="text" id="guessInput" placeholder="Type athlete name...">
+    <button id="guessBtn">Submit Guess</button>
+
+    <p id="resultText"></p>
+    <p id="scoreText">Score: 0</p>
+
+    <button id="nextBtn">Next Athlete</button>
+</div>
+
+<!-- ⭐ ALL JAVASCRIPT BELOW ⭐ -->
+<script>
+const athletes = [
+  {
+    name: "lebron james",
+    img: "https://th.bing.com/th/id/OIP.3WDzKk3gU0TMKmsF2aMQyAHaGl?w=160&h=150&c=6&o=7&dpr=1.3&pid=1.7&rm=3"
+  },
+  {
+    name: "stephen curry",
+    img: "https://th.bing.com/th/id/OIP.7n1nqP_nNsBk3RIDW8IKiwHaE7?w=278&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+  },
+  {
+    name: "tom brady",
+    img: "https://th.bing.com/th/id/OIP.ZYMBZdXBl_7IUZAXVEg-AQHaDt?w=315&h=175&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+  },
+  {
+    name: "lionel messi",
+    img: "https://th.bing.com/th/id/OIP.CkiEiPpWLkYFuf8v9Gzu6AHaE8?w=257&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+  },
+  {
+    name: "shohei ohtani",
+    img: "https://th.bing.com/th/id/OIP.EVsTHXKn3SF-Ds6Wm3lMcwHaEK?w=263&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+  }
+];
+
+let currentAthlete = {};
+let score = 0;
+
+// Elements
+const athleteImg = document.getElementById("athleteImg");
+const guessInput = document.getElementById("guessInput");
+const guessBtn = document.getElementById("guessBtn");
+const resultText = document.getElementById("resultText");
+const scoreText = document.getElementById("scoreText");
+const nextBtn = document.getElementById("nextBtn");
+
+// Load new athlete
+function newAthlete() {
+  currentAthlete = athletes[Math.floor(Math.random() * athletes.length)];
+  athleteImg.src = currentAthlete.img;
+  guessInput.value = "";
+  resultText.textContent = "";
+}
+
+guessBtn.addEventListener("click", () => {
+  let guess = guessInput.value.toLowerCase().trim();
+
+  if (guess === currentAthlete.name) {
+      resultText.textContent = "Correct!";
+      resultText.style.color = "lightgreen";
+      score++;
+      scoreText.textContent = "Score: " + score;
+  } else {
+      resultText.textContent = "Wrong! It was " + currentAthlete.name;
+      resultText.style.color = "red";
+  }
+});
+
+nextBtn.addEventListener("click", newAthlete);
+
+// Start the game
+newAthlete();
+</script>
+<footer>
+    <p>Sports Portfolio © 2025</p>
+</footer>
+</body>
+</html>
+
+</body>
+</html>
+
+
+
+</body>
+</html>
