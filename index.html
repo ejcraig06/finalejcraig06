@@ -1,30 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name • Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Anime Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <nav class="nav">
-    <a href="./">Home</a>
-    <a href="./projects.html">Projects</a>
-    <a href="./contact.html">Contact</a>
-    <button id="themeToggle" aria-label="Toggle theme">🌓</button>
-  </nav>
 
-  <header class="hero">
-    <img class="avatar" src="assets/avatar.png" alt="Your portrait" />
-    <h1>Hello, I’m <span id="studentName">Your Name</span></h1>
-    <p class="tagline">Web Design & Development Student</p>
-  </header>
+    <header>
+        <h1 class="title">🌸 My Anime Portfolio 🌸</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-  <section class="api">
-    <h2>API Demo</h2>
-    <p id="quote">Loading a quote via fetch()…</p>
-  </section>
+    <section class="hero">
+        <img src="https://i.ibb.co/T8cmrTx/anime-girl.png" alt="Anime character" class="hero-img">
+        <div class="hero-text">
+            <h2>Hi, I'm <span>Your Name</span>!</h2>
+            <p>Welcome to my anime-themed web portfolio. Explore my projects and enjoy a touch of Japanese aesthetics.</p>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <section class="quote-box">
+        <h3>🎴 Random Anime Quote</h3>
+        <p id="quote">Loading quote...</p>
+        <button id="quote-btn">Get New Quote</button>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ & Anime Energy</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
