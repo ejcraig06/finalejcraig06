@@ -1,17 +1,15 @@
-async function loadAnimeQuote() {
+async function loadSportsQuote() {
     try {
-        const response = await fetch("https://animechan.xyz/api/random");
-        const data = await response.json();
+        const res = await fetch("https://api.quotable.io/random?tags=sports|inspirational");
+        const data = await res.json();
 
-        document.getElementById("quote").textContent = 
-            `"${data.quote}" — ${data.character} (${data.anime})`;
+        document.getElementById("quote").textContent = `"${data.content}" — ${data.author}`;
     } catch (error) {
-        document.getElementById("quote").textContent =
-            "Could not load a quote right now 😢";
+        document.getElementById("quote").textContent = "Could not load a quote right now.";
     }
 }
 
-document.getElementById("quote-btn").addEventListener("click", loadAnimeQuote);
+document.getElementById("quote-btn").addEventListener("click", loadSportsQuote);
 
-// Load one on first visit
-loadAnimeQuote();
+// Load quote on page load
+loadSportsQuote();
