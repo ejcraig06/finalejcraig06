@@ -1,15 +1,24 @@
-async function loadSportsQuote() {
+async function loadQuote() {
     try {
         const res = await fetch("https://api.quotable.io/random?tags=sports|inspirational");
         const data = await res.json();
 
-        document.getElementById("quote").textContent = `"${data.content}" — ${data.author}`;
+        const quoteBox = document.getElementById("quote");
+
+        // Fade-in effect for each new quote
+        quoteBox.style.opacity = 0;
+        setTimeout(() => {
+            quoteBox.textContent = `"${data.content}" — ${data.author}`;
+            quoteBox.style.transition = "opacity 1s";
+            quoteBox.style.opacity = 1;
+        }, 150);
+
     } catch (error) {
-        document.getElementById("quote").textContent = "Could not load a quote right now.";
+        document.getElementById("quote").textContent = "Error loading quote. Try again!";
     }
 }
 
-document.getElementById("quote-btn").addEventListener("click", loadSportsQuote);
+document.getElementById("quote-btn").addEventListener("click", loadQuote);
 
-// Load quote on page load
-loadSportsQuote();
+// Load first quote
+loadQuote();
