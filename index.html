@@ -1,87 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ethan's Sports Portfolio</title>
-    <link rel="stylesheet" href="STYLE.css" />
-</head>
+<!-- HERO SECTION -->
+<section id="home" class="hero fade-in">
+    <div class="overlay"></div>
+    <div class="hero-content slide-up">
+        <h1>Welcome to My Sports Portfolio</h1>
+        <p>Hi, I'm Ethan — passionate about sports and technology.</p>
+    </div>
+</section>
 
-<body>
-    <header>
-        <nav>
-            <h2 class="logo">Ethan's Sports Portfolio</h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#news">Sports News</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- ABOUT -->
+<section id="about" class="about fade-in">
+    <h2>About Me</h2>
+    <p>
+        I'm <strong>Ethan</strong>, a sports fan and developer excited about blending sports & tech.
+    </p>
 
-    <!-- HERO SECTION -->
-    <section id="home" class="hero fade-in">
-        <div class="overlay"></div>
-        <div class="hero-content slide-up">
-            <h1>Welcome to My Sports Portfolio</h1>
-            <p>Hi, I'm Ethan — passionate about sports and technology.</p>
-        </div>
-    </section>
+    <img class="small-img"
+         src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d"
+         alt="Sports Training">
+</section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="about fade-in">
-        <h2>About Me</h2>
-        <p>
-            I'm <strong>Ethan</strong>, a sports fan and developer who enjoys building web projects 
-            combining athletics and modern tech.
-        </p>
+<!-- PROJECTS -->
+<section id="projects" class="projects fade-in">
+    <h2>My Projects</h2>
 
-        <img class="small-img" 
-             src="https://images.unsplash.com/photo-1502877338535-766e1452684a" 
-             alt="Sports Image">
-    </section>
+    <div class="project-card slide-up">
+        <img class="small-img"
+             src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7"
+             alt="Football">
+        <h3>🏈 Sports Stats Dashboard</h3>
+        <p>A web app showing real-time sports statistics using an external API.</p>
+    </div>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="projects fade-in">
-        <h2>My Projects</h2>
-
-        <div class="project-card slide-up">
-            <img class="small-img" 
-                 src="https://images.unsplash.com/photo-1517649763962-0c623066013b" 
-                 alt="Football">
-            <h3>🏈 Sports Stats Dashboard</h3>
-            <p>A web app showing real-time sports statistics using an external API.</p>
-        </div>
-
-        <div class="project-card slide-up">
-            <img class="small-img" 
-                 src="https://images.unsplash.com/photo-1517649763962-0c623066013b" 
-                 alt="Basketball">
-            <h3>🏀 Basketball Player Analyzer</h3>
-            <p>Interactive tool that visualizes player strengths and weaknesses using charts.</p>
-        </div>
-    </section>
-
-    <!-- SPORTS NEWS API SECTION -->
-    <section id="news" class="news fade-in">
-        <h2>Latest Sports Headlines</h2>
-        <p>(Loaded using a live Web API)</p>
-        <div id="news-container">Loading latest sports news...</div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="contact fade-in">
-        <h2>Contact Me</h2>
-        <p>Email: ethan@example.com</p>
-        <p>GitHub: <a href="https://github.com/yourusername">yourusername</a></p>
-    </section>
-
-    <footer>
-        <p>© 2025 Ethan — Sports Portfolio</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+    <div class="project-card slide-up">
+        <img class="small-img"
+             src="https://images.unsplash.com/photo-1518972559570-7cc1309f3229"
+             alt="Basketball">
+        <h3>🏀 Basketball Player Analyzer</h3>
+        <p>Interactive tool visualizing player strengths & weaknesses.</p>
+    </div>
+</section>
