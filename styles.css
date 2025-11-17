@@ -98,3 +98,47 @@
         height: 120px;
     }
 }
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#gameBox {
+  width: 350px;
+  margin: auto;
+  padding: 20px;
+  background: #222;
+  border-radius: 10px;
+  box-shadow: 0 0 10px white;
+}
+
+#athleteImg {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  background: orange;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
