@@ -1,17 +1,76 @@
-:root { color-scheme: light dark; --w: 900px; }
-*{box-sizing:border-box} body{font:16px/1.6 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0}
-.nav{display:flex;gap:12px;align-items:center;justify-content:center;padding:12px;border-bottom:1px solid #e5e5e5}
-.nav a{text-decoration:none;padding:6px 10px;border-radius:8px}
-.nav a.active,.nav a:hover{background:rgba(127,127,127,.15)}
-#themeToggle{margin-left:auto}
-.hero{max-width:var(--w);margin:24px auto;text-align:center;padding:24px}
-.avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 12px}
-.tagline{opacity:.8}
-.grid{max-width:var(--w);margin:24px auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;padding:0 16px}
-.card{padding:16px;border:1px solid #e5e5e5;border-radius:12px;background:#fff}
-.stack{max-width:600px;margin:24px auto;padding:0 16px}
-form{display:grid;gap:12px}
-label{display:grid;gap:6px}
-input,textarea,button{font:inherit;padding:10px;border:1px solid #ccc;border-radius:8px}
-button{cursor:pointer}
-@media (prefers-color-scheme: dark){ .card{background:#111;border-color:#333} }
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    background: #f3e6ff;
+    color: #3a2a42;
+}
+
+header {
+    background: #ff7ad1;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+.hero-text {
+    max-width: 500px;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2.4rem;
+}
+
+.quote-box {
+    background: white;
+    margin: 40px auto;
+    padding: 30px;
+    width: 70%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+#quote-btn {
+    padding: 10px 20px;
+    background: #ffc7f5;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#quote-btn:hover {
+    background: #ff92e8;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
