@@ -1,18 +1,17 @@
-// Theme toggle
-document.getElementById('themeToggle')?.addEventListener('click', () => {
-  const current = document.documentElement.getAttribute('data-theme');
-  document.documentElement.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
-});
+async function loadAnimeQuote() {
+    try {
+        const response = await fetch("https://animechan.xyz/api/random");
+        const data = await response.json();
 
-// Simple API fetch demo (AJAX)
-(async () => {
-  const el = document.getElementById('quote');
-  if (!el) return;
-  try {
-    const res = await fetch('https://api.quotable.io/random');
-    const data = await res.json();
-    el.textContent = `"${data.content}" — ${data.author}`;
-  } catch {
-    el.textContent = 'Could not load quote.';
-  }
-})();
+        document.getElementById("quote").textContent = 
+            `"${data.quote}" — ${data.character} (${data.anime})`;
+    } catch (error) {
+        document.getElementById("quote").textContent =
+            "Could not load a quote right now 😢";
+    }
+}
+
+document.getElementById("quote-btn").addEventListener("click", loadAnimeQuote);
+
+// Load one on first visit
+loadAnimeQuote();
