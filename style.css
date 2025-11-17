@@ -29,7 +29,7 @@ nav a {
 
 /* HERO SECTION */
 .hero {
-    height: 80vh;
+    height: 60vh; /* slightly shorter */
     background: url('https://images.unsplash.com/photo-1517649763962-0c623066013b') no-repeat center/cover;
     position: relative;
     display: flex;
@@ -52,39 +52,41 @@ nav a {
 
 /* ABOUT */
 .about {
-    padding: 50px;
+    padding: 40px;
     text-align: center;
 }
 
-.about img {
-    margin-top: 20px;
-    width: 60%;
+/* SMALLER IMAGES */
+.small-img {
+    width: 40%;      /* reduces image size */
+    max-width: 350px; /* caps image size */
     border-radius: 10px;
+    margin-top: 20px;
 }
 
 /* PROJECTS */
 .projects {
-    padding: 50px;
+    padding: 40px;
     background: #f5f5f5;
     text-align: center;
 }
 
 .project-card {
     background: white;
-    width: 80%;
+    width: 70%;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
 }
 
 .project-card img {
-    width: 100%;
-    border-radius: 10px;
+    display: block;
+    margin: auto;
 }
 
 /* NEWS */
 .news {
-    padding: 50px;
+    padding: 40px;
     text-align: center;
 }
 
@@ -95,7 +97,7 @@ nav a {
 
 /* CONTACT */
 .contact {
-    padding: 50px;
+    padding: 40px;
     background: #222;
     color: white;
     text-align: center;
@@ -116,7 +118,11 @@ footer {
         padding-top: 10px;
     }
 
-    .about img, .project-card {
-        width: 100%;
+    .small-img {
+        width: 80%;
+    }
+
+    .project-card {
+        width: 90%;
     }
 }
